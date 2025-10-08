@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Responsive Image</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        img {
+            max-width: 100%;    /* ปรับให้ไม่เกินขนาดหน้าจอ */
+            height: auto;       /* รักษาสัดส่วนภาพ */
+            display: block;     /* ตัดช่องว่างขาวของ inline element */
+            border-radius: 8px; /* เพิ่มมุมโค้งนิดๆ (ถ้าอยากให้ดูสวยขึ้น) */
+            box-shadow: 0 0 15px rgba(0,0,0,0.4); /* เพิ่มเงา */
+        }
+    </style>
+</head>
+<body>
+    <img src="Transcipt.jpg" alt="Transcript">
+</body>
+</html>
