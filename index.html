@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Transcript</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transcript</title>
+<style>
+    body {
+        margin: 0;
+        padding: 20px;
+        background-color: #111;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; 
+    }
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: #111;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.4);
-            cursor: pointer;
-        }
-    </style>
+    img {
+        max-width: 90%;
+        max-height: 90vh;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        cursor: pointer;
+    }
+</style>
 </head>
 <body>
 
-    <img id="main-img" src="Transcript1.jpg" alt="Transcript">
+<img id="main-img" src="Transcript1.jpg" alt="Transcript">
 
-    <script>
-        const img = document.getElementById("main-img");
-        const img1 = "Transcript1.jpg";
-        const img2 = "Transcript2.jpg";
+<script>
+    const img = document.getElementById("main-img");
+    const img1 = "Transcript1.jpg";
+    const img2 = "Transcript2.jpg";
 
-        img.addEventListener("click", () => {
-            img.src = (img.src.includes(img1)) ? img2 : img1;
-        });
-    </script>
+    img.addEventListener("click", () => {
+        img.src = (img.src.includes(img1)) ? img2 : img1;
+    });
+</script>
 
 </body>
 </html>
