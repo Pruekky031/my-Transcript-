@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Transcript</title>
+    <title>Transcript Toggle</title>
 
     <style>
         body {
@@ -13,20 +13,32 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
         }
 
         img {
-            max-width: 100%;    /* ปรับให้ไม่เกินขนาดหน้าจอ */
-            height: auto;       /* รักษาสัดส่วนภาพ */
-            display: block;     /* ตัดช่องว่างขาวของ inline element */
-            border-radius: 8px; /* เพิ่มมุมโค้งนิดๆ (ถ้าอยากให้ดูสวยขึ้น) */
-            box-shadow: 0 0 15px rgba(0,0,0,0.4); /* เพิ่มเงา */
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+            cursor: pointer; /* ให้รู้ว่าคลิกได้ */
         }
     </style>
 </head>
 <body>
-    <img src="Transcipt.jpg" alt="Transcript">
+
+    <img id="main-img" src="Transcipt1.jpg" alt="Transcript">
+
+    <script>
+        const img = document.getElementById("main-img");
+
+        const img1 = "Transcipt1.jpg";
+        const img2 = "Transcipt2.jpg";
+
+        img.addEventListener("click", () => {
+            img.src = (img.src.includes(img1)) ? img2 : img1;
+        });
+    </script>
+
 </body>
 </html>
-
