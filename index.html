@@ -21,19 +21,19 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 0 15px rgba(0,0,0,0.4);
-            cursor: pointer; /* ให้รู้ว่าคลิกได้ */
+            cursor: pointer; 
         }
     </style>
 </head>
 <body>
 
-    <img id="main-img" src="Transcipt1.jpg" alt="Transcript">
+    <img id="main-img" src="Transcript21.jpg" alt="Transcript">
 
     <script>
         const img = document.getElementById("main-img");
 
-        const img1 = "Transcipt1.jpg";
-        const img2 = "Transcipt2.jpg";
+        const img1 = "Transcript1.jpg";
+        const img2 = "Transcript2.jpg";
 
         img.addEventListener("click", () => {
             img.src = (img.src.includes(img1)) ? img2 : img1;
@@ -42,3 +42,4 @@
 
 </body>
 </html>
+
